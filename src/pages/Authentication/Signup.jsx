@@ -1,10 +1,7 @@
-import Auth from "../../components/Auth/Auth"
+import Auth from "../../components/Auth/Auth";
 
-function Signup({setAuthPage}) {
-
-    return (
-        <Auth page={'Signup'} setAuthPage={setAuthPage} />        
-    )
+function Signup({ setAuthPage }) {
+  return <Auth page={"Signup"} setAuthPage={setAuthPage} />;
 }
 
 export default Signup;
