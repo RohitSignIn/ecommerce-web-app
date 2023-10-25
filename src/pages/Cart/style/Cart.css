@@ -1,0 +1,156 @@
+#cart {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+#cart #cart_product_con {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 2px rgb(214, 214, 214);
+  background-color: #fff;
+}
+#cart #cart_product_con .cart_product {
+  padding: 0.6rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 120px;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) div:nth-child(1) img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) div:nth-child(2) p:not(:first-child) {
+  color: #878787;
+  font-size: 0.8rem;
+}
+#cart #cart_product_con .cart_product > div:nth-child(1) div:nth-child(2) p:first-child {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.8rem 0 0.4rem 0;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(1) > button {
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(1) > p {
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #c4c4c4;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(2) {
+  padding: 0;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(2) > button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#cart #cart_product_con .cart_product div:nth-child(2) > div:nth-child(2) > button:hover {
+  color: #2874f0;
+}
+#cart #cart_product_con #cart_place_order {
+  position: sticky;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgb(214, 214, 214);
+  background-color: #fff;
+  padding: 0.8rem;
+}
+#cart #cart_product_con #cart_place_order button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.7rem 4rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fb641b;
+}
+#cart #emptyCart {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cart #emptyCart p {
+  font-size: 1.1rem;
+}
+#cart #cart_price_details {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 2px rgb(214, 214, 214);
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+#cart #cart_price_details .cart_heading {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.8rem 0;
+}
+#cart #cart_price_details .cart_heading span {
+  margin: 0 1.5rem;
+  font-weight: 500;
+  font-size: 0.94rem;
+  color: #878787;
+}
+#cart #cart_price_details #cart_total_detail {
+  margin: 0.6rem 1.5rem;
+}
+#cart #cart_price_details #cart_total_detail > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+}
+#cart #cart_price_details #cart_total_detail > div:last-child {
+  border-top: 1px dashed #e0e0e0;
+  margin: 0.6rem 0;
+}
+#cart #cart_price_details #cart_total_detail > div:last-child p {
+  padding: 0.3rem 0;
+  font-weight: 500;
+}/*# sourceMappingURL=Cart.css.map */

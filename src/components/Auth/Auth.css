@@ -1,0 +1,137 @@
+:root{
+    --mainColor: #2874f0;
+    --textColor: #fff;
+    --lightColor: #e0e0e0;
+    --form_bg: #fff;
+    --btnColor: #fb641b;
+}
+
+
+#auth_con{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.587);
+}
+
+#auth{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+}
+
+#auth_form_con{
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    min-width: 320px;
+}
+
+#auth_form_con > div:last-child{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+#auth_form_con > div:last-child > button{
+    background-color: transparent;
+    color: var(--mainColor);
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#auth_form_con > div{
+    padding: 3rem 1.5rem;
+    width: 100%;
+}
+#auth_form_con > div > div{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#auth_form_con input{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--lightColor);
+    transition: border-bottom 0.5s ease;
+}
+
+#auth_form_con > div > div > p{
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    color: tomato;
+}
+
+#auth_form_con input:focus{
+    border-bottom: 1px solid var(--mainColor);
+}
+
+
+#auth_form_con > div > div:last-child{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#auth_form_con > div > div:last-child > button{
+    background-color: var(--btnColor);
+    color: var(--textColor);
+    padding: 0.8rem 3rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#auth_side{
+    min-height: 448px;
+    display: flex;
+    padding: 2rem 1.5rem;
+    color: var(--textColor);
+    background: var(--mainColor);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#auth_side h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#auth_side p{
+    margin-top: 1rem;
+    font-size: 0.98rem;
+    font-weight: 400;
+}
+
+#auth_cross{
+    position: absolute;
+    right: -25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    line-height: 10px;
+    font-weight: 400;
+    color: var(--textColor);
+    cursor: pointer;
+}
