@@ -11,13 +11,12 @@ const Card = ({ catg }) => {
     let allProducts;
     if (catg) {
       allProducts = await axios.get(
-        `https://fake-store-apii.onrender.com/products/category/${catg}`
+        `https://localhost:8765/products/category/${catg}`
       );
     } else {
-      allProducts = await axios.get(
-        "https://fake-store-apii.onrender.com/products",
-        { withCredentials: true }
-      );
+      allProducts = await axios.get("https://localhost:8765/products", {
+        withCredentials: true,
+      });
     }
     setProducts(() => allProducts.data);
     setFilterProd(() => allProducts.data);

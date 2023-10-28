@@ -8,7 +8,7 @@ const Category = () => {
   const [category, setCategory] = useState(null);
   async function loadCategories() {
     const categories = await axios.get(
-      "https://fake-store-apii.onrender.com/products/categories"
+      "https://localhost:8765/products/categories"
     );
 
     setCategory(() => categories.data);
