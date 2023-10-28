@@ -10,7 +10,9 @@ const ProductDetails = ({ prd }) => {
   const [added, setAdded] = useState(false);
 
   async function getProductDetail() {
-    const prdData = await axios.get(`https://localhost:8765/products/${prd}`);
+    const prdData = await axios.get(
+      `https://fake-store-apii.onrender.com/products/${prd}`
+    );
 
     setDetail(() => prdData.data);
   }
