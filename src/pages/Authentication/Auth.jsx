@@ -8,7 +8,7 @@ import { useCookies } from "react-cookie";
 function Login({ setAuthPage }) {
   const [cookies, setCookie] = useCookies();
 
-  if (cookies.auth) setAuthPage((prev) => !prev);
+  if (cookies.auth) return;
 
   const [page, setPage] = useState("Login");
 
@@ -21,7 +21,11 @@ function Login({ setAuthPage }) {
     } else {
       const res = await axios.post(loginUser, data, { withCredentials: true });
       if (res.data.success) {
-        setAuthPage((prev) => !prev);
+        setAuthPage(true);
+        setCookie("auth", res.data.auth);
+        setCookie("user_id", res.data.user_id);
+        setCookie("email", res.data.email);
+        setCookie("username", res.data.username);
       }
     }
   }

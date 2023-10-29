@@ -25,6 +25,7 @@ function App() {
     });
     setCart(cartData.data[0].products);
   }
+
   useEffect(() => {
     getCart();
   }, [cookies.auth]);
